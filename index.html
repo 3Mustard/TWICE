@@ -1,0 +1,328 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Twice</title>
+  <style>
+    header{
+      background: url(img/backgroundPlain.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 1000px;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
+    .parallax-container {
+      height: 650px;
+    }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .tabs .indicator{
+      background-color: #673ab7;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active {
+      background: transparent;
+    }
+    .picker { 
+      outline: none; 
+    }
+    .datepicker-date-display {
+      background-color: #81c784;
+    }
+    .datepicker-table td.is-selected {
+      background: #81c784 !important;
+    }
+    .datepicker-cancel, .datepicker-done {
+      color: #81c784;
+    }
+    .is-today {
+      color: #81c784 !important;
+    }
+    input[type="checkbox"]:checked + span:not(.lever)::before {
+      border:2px solid transparent;
+      border-bottom:2px solid #81c784;
+      border-right:2px solid #81c784;
+      background:transparent;
+    }
+    input:focus {
+      border-bottom: 1px solid #66bb6a !important;
+      box-shadow: 0 1px 0 0 #66bb6a !important;
+    }
+    label.active {
+      color: #66bb6a !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="#" class="brand-logo black-text">트와이스</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">Menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#more" class="black-text">More&More</a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Instagram"> 
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#more" class="black-text">More&More</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 3 idols -->
+  <section class="container section" id="stuff">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/img4.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="pink-text text-lighten-3">Chaeyoung 채영</h2>
+        <p>birth name: Son Chae Young 손채영</p>
+        <p>birthplace: Seoul, South Korea</p>
+        <p>birthday: April 23, 1999</p>
+        <p>positions: main rapper, vocalist</p>
+        <p>star sign: taurus</p>
+        <p>blood type: B</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/img5.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="pink-text text-lighten-3">Jeongyeon 정연</h2>
+        <p>birth name: Yoo Kyung-wan 유경완</p>
+        <p>birthplace: Suwon, South Korea</p>
+        <p>birthday: November 1, 1996</p>
+        <p>position: lead vocalist</p>
+        <p>star sign: scorpio</p>
+        <p>blood type: O</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/img6.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="pink-text text-lighten-3">Nature</h2>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+      <div class="parallax">
+          <img src="img/parallax6.jpg" alt="twice-parallax" class="responsive-img">
+      </div>
+  </div>
+
+  <!-- song tab -->
+  <section class="container section scrollspy" id="more">
+    <div class="row">
+        <div class="col s12 l4">
+            <h2 class="deep-purple-text">More & More</h2>
+            <p>More & More is the ninth Korean EP by the South Korean girl group Twice. It was released by JYP Entertainment and Republic Records on June 1, 2020, and features the lead single of the same name.</p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#video1" class="deep-purple-text text-lighten-1">More&More M/V</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#video2" class="deep-purple-text text-lighten-1">More&More Live</a>
+                </li>
+            </ul>
+            <div class="col s12" id="video1">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/mH0_XpSHkZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col s12" id="video2">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MHbm4TvQGwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+        <img src="img/parallax5.jpg" alt="twice-parallax" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- 3 idols  -->
+  <section class="container section" id="stuff">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/img4.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="pink-text text-lighten-3">Stuff</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/img5.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="pink-text text-lighten-3">Cityscapes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/img6.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="pink-text text-lighten-3">Nature</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+        <img src="img/parallax5.jpg" alt="twice-parallax" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- song tab -->
+  <section class="container section scrollspy" id="more">
+    <div class="row">
+        <div class="col s12 l4">
+            <h2 class="deep-purple-text">More & More</h2>
+            <p>More & More is the ninth Korean EP by the South Korean girl group Twice. It was released by JYP Entertainment and Republic Records on June 1, 2020, and features the lead single of the same name.</p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#video1" class="deep-purple-text text-lighten-1">More&More M/V</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#video2" class="deep-purple-text text-lighten-1">More&More Live</a>
+                </li>
+            </ul>
+            <div class="col s12" id="video1">
+              tab2
+            </div>
+            <div class="col s12" id="video2">
+              tab1
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+        <img src="img/parallax5.jpg" alt="twice-parallax" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- 3 idols  -->
+  <section class="container section" id="stuff">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/img4.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="pink-text text-lighten-3">Stuff</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/img5.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="pink-text text-lighten-3">Cityscapes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/img6.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="pink-text text-lighten-3">Nature</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3 scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>About Me</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2020 TWICE-ONCE</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });  
+
+    });
+  </script>
+  <!--More datepicker options https://materializecss.com/pickers.html-->
+</body>
+</html>
