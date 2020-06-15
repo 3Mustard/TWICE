@@ -63,19 +63,6 @@
     label.active {
       color: #66bb6a !important;
     }
-    .video-responsive {
-      overflow:hidden;
-      padding-bottom:56.25%;
-      position:relative;
-      height:0;
-    }
-    .video-responsive iframe {
-      left:0;
-      top:0;
-      height:100%;
-      width:100%;
-      position:absolute;
-    }
   </style>
 </head>
 <body>
@@ -172,14 +159,10 @@
         <div class="col s12 l6 offset-l2">
             <ul class="tabs">
                 <li class="tab col s6">
-                  <div class="video-responsive">
                     <a href="#video1" class="deep-purple-text text-lighten-1">More&More M/V</a>
-                  </div>
                 </li>
                 <li class="tab col s6">
-                  <div class="video-responsive">
                     <a href="#video2" class="deep-purple-text text-lighten-1">More&More Live</a>
-                   </div>
                 </li>
             </ul>
             <div class="col s12" id="video1">
@@ -261,14 +244,10 @@
         <div class="col s12 l6 offset-l2">
             <ul class="tabs">
                 <li class="tab col s6">
-                  <div class="video-responsive">
                     <a href="#ep1" class="deep-purple-text text-lighten-1">EP 1</a>
-                  </div>
                 </li>
                 <li class="tab col s6">
-                  <div class="video-responsive">
                     <a href="#ep2" class="deep-purple-text text-lighten-1">EP 2</a>
-                  </div>
                 </li>
             </ul>
             <div class="col s12" id="ep1">
@@ -369,14 +348,10 @@
       $('.parallax').parallax();
       $('.tabs').tabs();
       $('.tooltipped').tooltip();
-      $('.scrollspy').scrollSpy();
-      $('.datepicker').datepicker({
-        disableWeekends: true,
-        yearRange: 1
-      });  
+      $('.scrollspy').scrollSpy(); 
 
     });
   </script>
-  <!--More datepicker options https://materializecss.com/pickers.html-->
+  
 </body>
 </html>
