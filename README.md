@@ -1,5 +1,5 @@
 # TWICE ~ 트와이스
-Member bio site for Twice ~ 트와이스
+Twice ~ 트와이스 members bio page
 
 # Purpose 
 apply knowledge of materializecss
