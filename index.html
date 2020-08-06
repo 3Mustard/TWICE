@@ -29,39 +29,24 @@
       padding-top: 4vw;
       padding-bottom: 4vw;
     }
-    .tabs .indicator{
-      background-color: white;
-    }
-    .tabs .tab a:focus, .tabs .tab a:focus.active {
-      background: transparent;
-    }
-    .picker { 
-      outline: none; 
-    }
-    .datepicker-date-display {
-      background-color: #81c784;
-    }
-    .datepicker-table td.is-selected {
-      background: #81c784 !important;
-    }
-    .datepicker-cancel, .datepicker-done {
-      color: #81c784;
-    }
-    .is-today {
-      color: #81c784 !important;
-    }
-    input[type="checkbox"]:checked + span:not(.lever)::before {
-      border:2px solid transparent;
-      border-bottom:2px solid #81c784;
-      border-right:2px solid #81c784;
-      background:transparent;
-    }
-    input:focus {
-      border-bottom: 1px solid #66bb6a !important;
-      box-shadow: 0 1px 0 0 #66bb6a !important;
-    }
-    label.active {
-      color: #66bb6a !important;
+    .tabs .tab a{
+      color:#000;
+    } /*Black color to the text*/
+
+    .tabs .tab a:hover {
+      background-color:rgb(255, 211, 242);
+      border-radius: 25px;
+      color:#000;
+    } /*Text color on hover*/
+
+    .tabs .tab a.active {
+      background-color:rgb(255, 211, 242);;
+      border-radius: 25px;
+      color:#000;
+    } /*Background and text color when a tab is active*/
+
+    .tabs .indicator {
+      background-color:rgb(255, 255, 255);
     }
   </style>
 </head>
@@ -76,7 +61,7 @@
           <i class="material-icons black-text">dehaze</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#comeback" class="black-text">Comeback</a></li>
+          <li><a href="#comeback" class="black-text">More&More!</a></li>
           <li><a href="https://www.instagram.com/twicetagram/" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Instagram" target="_blank"> 
             <i class="fab fa-instagram"></i>
           </a></li>
@@ -87,9 +72,18 @@
             <i class="fab fa-youtube"></i>
           </a></li>
         </ul>
-        <ul class="sidenav grey lighten-2" id="mobile-menu">
-          <li><a href="#comeback" class="black-text">Comeback Content</a></li>
-        </ul>
+        <div id="mobile-menu" class="sidenav grey lighten-2">
+          <h3 class="center black-text text-lighten-3">More&More Track List</h3>
+          <ul class="center black-text text-lighten-3">
+            <li>1. More&More</li>
+            <li>2. Oxygen</li>
+            <li>3. Firework</li>
+            <li>4. Make Me Go</li>
+            <li>5. Shadow</li>
+            <li>6. Don't Call Me Again</li>
+            <li>7. Sweet Summer Day</li>
+          </ul>
+      </div>
       </div>
     </nav>
   </header>
@@ -114,7 +108,7 @@
       <div class="col s12 l4 offset-l1 push-l7">
           <img src="img/img5.jpg" alt="" class="responsive-img materialboxed">
       </div>
-      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+      <div class="col s12 l6 offset-l1 pull-l5">
         <h2 class="pink-text text-lighten-3">Mina 미나</h2>
         <p>birth name: Myoui Mina 名井 南</p>
         <p>birthplace: San Antonio, United States</p>
@@ -142,7 +136,7 @@
       <div class="col s12 l4 offset-l1 push-l7">
           <img src="img/img1.jpg" alt="" class="responsive-img materialboxed">
       </div>
-      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+      <div class="col s12 l6 offset-l1 pull-l5">
         <h2 class="pink-text text-lighten-3">Momo 모모</h2>
         <p>birth name: Hirai Momo 平井 もも</p>
         <p>birthplace: Kyoto, Japan</p>
@@ -170,7 +164,7 @@
       <div class="col s12 l4 offset-l1 push-l7">
           <img src="img/img3.jpg" alt="" class="responsive-img materialboxed">
       </div>
-      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+      <div class="col s12 l6 offset-l1 pull-l5">
         <h2 class="pink-text text-lighten-3">Dahyun 다현</h2>
         <p>birth name: Kim Da Hyun 김다현</p>
         <p>birthplace: Gyeonggi-do, South Korea</p>
@@ -198,7 +192,7 @@
       <div class="col s12 l4 offset-l1 push-l7">
           <img src="img/img8.jpg" alt="" class="responsive-img materialboxed">
       </div>
-      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+      <div class="col s12 l6 offset-l1 pull-l5">
         <h2 class="pink-text text-lighten-3">Jeongyeon 정연</h2>
         <p>birth name: Yoo Kyung-wan 유경완</p>
         <p>birthplace: Suwon, South Korea</p>
@@ -237,8 +231,9 @@
     <div class="row">
         <div class="col s12 l4">
             </br>
-            <h3>Recent Comeback</h3>
-            <p>More & More is the ninth Korean EP by the South Korean girl group Twice. It was released by JYP Entertainment and Republic Records on June 1, 2020, and features the lead single of the same name.</p>
+            <h3>More&More</h3>
+            <p>"More & More" is the ninth Korean EP by the South Korean girl group Twice. It was released by JYP Entertainment and Republic Records on June 1, 2020, and features the lead single of the same name.</p>
+            <h3>Fanefare</h3>
             <p>"Fanfare" is a Japanese song by South Korean girl group Twice. The song and music video were released by Warner Music Japan on June 18, 2020.</p>
             <div class="carousel show-on-small">
               <a class="carousel-item" href="#one!"><img src="img/11.jpg"></a>
@@ -313,23 +308,15 @@
   <footer class="page-footer grey darken-3 scrollspy">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5>트와이스</h5>
-          <p>Unofficial Fansite</p>
+        <div class="col l12 s12">
+          <h5 class="center">트와이스</h5>
+          <p class="center">Unofficial More&More Comeback Site</p>
           <p>TWICE is a South Korean girl group formed by JYP Entertainment. The group is composed of nine members: Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, and Tzuyu. Twice was formed with the 2015 television program Sixteen, a reality show designed to select the members of Twice.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Stay Connected</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="https://twitter.com/JYPETWICE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/twicetagram/" target="_blank">Instagram</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCzgxx_DM2Dcb9Y1spb9mUJA" target="_blank">YouTube</a></li>
-          </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright grey darken-4">
-      <div class="container center-align">contact info: m23.cullen@gmail.com</div>
+      <div class="container center-align">TWICE Official Website: https://twice.jype.com/</div>
     </div>
   </footer>
 
