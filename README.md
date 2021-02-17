@@ -2,7 +2,7 @@
 Twice ~ 트와이스 more&more comeback site
 
 # Purpose 
-apply knowledge of materializecss
+apply knowledge of html/css/js
 
 # Hosted 
 https://3mustard.github.io/TWICE/
